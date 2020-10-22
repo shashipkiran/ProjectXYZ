@@ -9,6 +9,7 @@ import Button from '@material-ui/core/Button';
 import { OrgRecAction } from '../statemt/actions';
 import { connect } from 'react-redux';
 import api from '../api';
+import { NavBar } from '../components';
 
 const useStyles = theme => ({
     root: {
@@ -47,7 +48,7 @@ const mapDispatchToProps = dispatch => ({
 
 class Home extends React.Component{
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
             customers: [],
         }
@@ -73,6 +74,7 @@ class Home extends React.Component{
 
         return (
             <div>
+                <NavBar />
                 <main className={classes.layout}>
                     <div className={classes.toolbar}/>
                     <Card className={classes.root}>

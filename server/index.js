@@ -6,7 +6,7 @@ const db = require('./db/connectdb');
 const custRouter = require('./routes/cust-route');
 
 const app = express();
-const apiPort = 4000;
+const apiPort = 5000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());

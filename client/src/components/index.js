@@ -1,3 +1,4 @@
-import NavBar from './NavBar'
+import NavBar from './NavBar';
+import ChatBar from './ChatBar';
 
-export { NavBar }
+export { NavBar, ChatBar }

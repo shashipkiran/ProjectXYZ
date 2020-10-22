@@ -1,5 +1,6 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
+import { NavBar } from '../components';
 
 const useStyles = theme => ({
     layout: {
@@ -34,6 +35,7 @@ class invoices extends React.Component {
         const { classes } = this.props;
         return (
             <React.Fragment>
+                <NavBar />
                 <main className={classes.layout}>
                     <div className={classes.toolbar} />
                     <div>This is where you see the invoices</div>

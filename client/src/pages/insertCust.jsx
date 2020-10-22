@@ -10,6 +10,7 @@ import StepLabel from '@material-ui/core/StepLabel';
 import Snackbar from '@material-ui/core/Snackbar';
 import { connect } from 'react-redux';
 import api from '../api';
+import { NavBar } from '../components';
 
 const useStyles = theme => ({
     layout: {
@@ -51,7 +52,6 @@ function mapStateToProps(state) {
         content:content,
     }
 }
-
 
 class insertCust extends React.Component{
     constructor(props){
@@ -125,6 +125,7 @@ class insertCust extends React.Component{
 
         return (
             <React.Fragment>
+                <NavBar />
                 <main className={classes.layout}>
                     <div className={classes.toolbar} />
                     <Paper className={classes.paper}>
